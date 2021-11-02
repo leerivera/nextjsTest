@@ -1,14 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../comps/Navbar'
+import Layout from '../comps/Layout'
+
 import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <h1>HomePage</h1>
+      <p>This is a memory palace game</p>
+
+      <Layout href="/cards">
+         <a>See all cards</a>
+
+      </Layout>
     
     </div>
   )
